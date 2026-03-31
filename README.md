@@ -56,17 +56,21 @@ or you can use another name instead of default . it will create a file in  ```/e
 
 Add the following 
 
-``` 
- server_name yourdomain.com www.yourdomain.com;
+```
+server {
+    listen 80;
+    server_name yourdomain.com www.yourdomain.com;
 
     location / {
-        proxy_pass http://localhost:8001; #whatever port your app runs on
+        proxy_pass http://localhost:3000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
+}
+
 ```
 for frontend like build/ dist etc 
 ```
