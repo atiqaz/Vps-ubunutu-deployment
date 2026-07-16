@@ -1,4 +1,6 @@
 
+## Add NVM
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash
 
     
 ## VPS Deployement Node js
