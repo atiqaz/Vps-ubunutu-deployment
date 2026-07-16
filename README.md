@@ -3,7 +3,15 @@
     
 ## VPS Deployement Node js
 
+
 1. connect  terminus using ssh
+
+### install nvm
+
+```sudo apt update
+sudo apt install curl -y
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+```
 
 ### Install Node  and Npm 
 ```# Download and install nvm:
